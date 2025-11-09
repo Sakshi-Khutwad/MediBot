@@ -20,7 +20,7 @@ custom_config = r'--oem 3 --psm 6 -c tessedit_char_whitelist=0123456789abcdefghi
 
 <<<<<<< HEAD
 # Set Gemini API key for use in other modules
-os.environ["GEMINI_API_KEY"] = "AIzaSyA0k9SGya9EIkPrL3KCFF-fDCQQUpEw4xI"
+os.environ["GEMINI_API_KEY"] = "_______________________"
 
 =======
 >>>>>>> 9eebbe4
