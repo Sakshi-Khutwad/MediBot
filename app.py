@@ -115,7 +115,7 @@ with col2:
                     
                     # Analyze with Gemini using REST API
                     if extracted_text and extracted_text.strip():
-                        GEMINI_API_KEY = "AIzaSyA0k9SGya9EIkPrL3KCFF-fDCQQUpEw4xI"
+                        GEMINI_API_KEY = "____________________"
                         genai.configure(api_key=GEMINI_API_KEY)
                         
                         model = genai.GenerativeModel('gemini-2.5-flash')  # Use Gemini 2.5
