@@ -9,14 +9,21 @@ import numpy as np
 import camelot
 
 # If using Windows, set tesseract path
+<<<<<<< HEAD
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+=======
+# pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+>>>>>>> 9eebbe4
 
 # Global Tesseract config with whitelist for numbers, decimals, units
 custom_config = r'--oem 3 --psm 6 -c tessedit_char_whitelist=0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.,:/-()% '
 
+<<<<<<< HEAD
 # Set Gemini API key for use in other modules
 os.environ["GEMINI_API_KEY"] = "AIzaSyA0k9SGya9EIkPrL3KCFF-fDCQQUpEw4xI"
 
+=======
+>>>>>>> 9eebbe4
 def clean_ocr_output(text):
     """
     Correct common OCR mistakes in medical reports.

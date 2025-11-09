@@ -1,9 +1,21 @@
+<<<<<<< HEAD
 import os
 from google import generativeai as genai
 
-os.environ["GOOGLE_API_KEY"] = "AIzaSyA0k9SGya9EIkPrL3KCFF-fDCQQUpEw4xI"
-genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
+# Use the API key from the environment variable GEMINI_API_KEY
+api_key = os.environ.get("GEMINI_API_KEY")
+if not api_key:
+    raise ValueError("GEMINI_API_KEY environment variable not set.")
+genai.configure(api_key=api_key)
 
-model = genai.GenerativeModel("gemini-2.5-flash")  # Use "gemini-2.5-flash" for Gemini 2.5
+model = genai.GenerativeModel("gemini-2.5-flash")
 response = model.generate_content("Explain how AI works in a few words")
+from google import genai
+
+# The client gets the API key from the environment variable `GEMINI_API_KEY`.
+client = genai.Client()
+
+response = client.models.generate_content(
+    model="gemini-2.5-flash", contents="Explain how AI works in a few words"
+)
 print(response.text)
