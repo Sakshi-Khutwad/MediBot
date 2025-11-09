@@ -1,0 +1,11 @@
+pytesseract
+pillow
+pdfplumber
+pdf2image
+opencv-python
+numpy
+camelot-py[cv]
+groq
+requests
+streamlit
+google-generativeai>=0.3.0
